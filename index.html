@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Análise Financeira</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Sistema de Análise Financeira</h1>
+  </header>
+
+  <main class="container">
+    <section id="face-recognition">
+      <h2>Reconhecimento Facial</h2>
+      <div class="video-container">
+        <video id="video" autoplay muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <button id="start-button">Iniciar Reconhecimento</button>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <h2>Bem-vindo, Usuário</h2>
+      <p>Você foi autenticado com sucesso!</p>
+      <div class="stats">
+        <div class="stat">
+          <h3>Receitas</h3>
+          <p id="receitas">R$ 0,00</p>
+        </div>
+        <div class="stat">
+          <h3>Despesas</h3>
+          <p id="despesas">R$ 0,00</p>
+        </div>
+        <div class="stat">
+          <h3>Saldo</h3>
+          <p id="saldo">R$ 0,00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</body>
+</html>

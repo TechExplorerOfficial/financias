@@ -1,0 +1,12 @@
+{
+    "receitas": 5000,
+    "despesas": 3000,
+    "poupanca_mensal": 500,
+    "meses": 6
+}
+{
+    "saldo_atual": 2000,
+    "poupanca_total": 3000,
+    "saldo_futuro": 5000,
+    "status": "Simulação realizada com sucesso!"
+}
